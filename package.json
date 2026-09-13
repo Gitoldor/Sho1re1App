@@ -3,11 +3,19 @@
   "version": "1.0.0",
   "private": true,
   "description": "My Sho1re1 Android app",
+
+  "scripts": {
+    "build": "esbuild src/app.js --bundle --outfile=www/app.js --format=iife --platform=browser"
+  },
+
   "dependencies": {
     "@capacitor/android": "latest",
-    "@capacitor/core": "latest"
+    "@capacitor/core": "latest",
+    "@capacitor/local-notifications": "latest"
   },
+
   "devDependencies": {
-    "@capacitor/cli": "latest"
+    "@capacitor/cli": "latest",
+    "esbuild": "latest"
   }
 }
